@@ -1,0 +1,132 @@
+/* 
+.new-expense_controls {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    max-width: 500px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .new-expense_control {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .new-expense_control label {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .new-expense_control input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .new-expense_control input:focus {
+    outline: none;
+    border-color: #007bff; 
+  }
+  
+
+  .new-expense_action {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .new-expense_action button {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .new-expense_action button:hover {
+    background-color: #0056b3;
+  } */
+
+  .new-expense_controls {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 2rem;
+    border-radius: 12px;
+    background-color: #ffffff;
+    max-width: 600px;
+    margin: 2.5rem auto;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #28a745;
+  }
+  
+  /* Styling for individual form controls */
+  .new-expense_control {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  
+  .new-expense_control label {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #444;
+    text-transform: capitalize;
+  }
+  
+  .new-expense_control input {
+    padding: 0.8rem;
+    font-size: 1.05rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.4s ease;
+  }
+  
+  .new-expense_control input:focus {
+    border-color: #28a745;  /* Green focus border */
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.2);
+    outline: none;
+  }
+  
+  /* Styling for the button */
+  .new-expense_action {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .new-expense_action button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Space between icon and text */
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .new-expense_action button i {
+    font-size: 1.2rem; /* Icon size */
+  }
+  
+  .new-expense_action button:hover {
+    background-color: #218838;
+    transform: translateY(-2px); /* Button pop effect */
+  }
+  
