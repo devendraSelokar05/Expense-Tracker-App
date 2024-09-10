@@ -45,7 +45,7 @@ const ExpenseForm = () => {
                 <input onChange={dateChangeHandler} type="date" value={Enterddate} />
                 </div>
             <div className='new-expense_action'>
-            <i class="bi bi-cart-check"></i>
+            {/* <i class="bi bi-cart-check"></i> */}
                 <button type='submit' >Add Expense</button>
             </div>
         </div>
