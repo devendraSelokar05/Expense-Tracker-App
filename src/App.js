@@ -4,6 +4,10 @@ import NewExpense from "./components/New-Expense/NewExpense";
 
 
 function App() {
+  const saveDataExpenseDataHandler =(enteredAppExpenseData) =>{
+    console.log(enteredAppExpenseData)
+  }
+  
 let expense = [
   {
   title: 'Bike expense',
@@ -32,7 +36,7 @@ let expense = [
 ]
   return (
     <>
-      <NewExpense />
+      <NewExpense SaveAppExpenseData ={saveDataExpenseDataHandler} />
     {/* <h2>Let's Start Expense...!</h2> */}
     <Expenses item ={expense} />
 
