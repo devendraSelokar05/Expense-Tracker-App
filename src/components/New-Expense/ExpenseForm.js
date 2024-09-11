@@ -30,6 +30,8 @@ const ExpenseForm = (props) => {
 
         props.onSaveExpenseData(ExpenseData);
         console.log(ExpenseData)
+        
+        // it is used for blank the data
         setEnteredtitle("");
         setEnteredamount("");
         setEntereddate("")

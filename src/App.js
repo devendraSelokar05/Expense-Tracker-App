@@ -1,14 +1,10 @@
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/New-Expense/NewExpense";
+import { useState } from "react";
 
 
 
-function App() {
-  const saveDataExpenseDataHandler =(enteredAppExpenseData) =>{
-    console.log(enteredAppExpenseData)
-  }
-  
-let expense = [
+let Manual_Data =[
   {
   title: 'Bike expense',
   amount: 200000,
@@ -34,11 +30,22 @@ let expense = [
         }
 
 ]
+
+function App() {
+  const [expenses, setExpenses] = useState(Manual_Data);
+  const saveDataExpenseDataHandler =(expense) =>{
+    setExpenses((prevExpense) =>{
+      return[expense, ...prevExpense]
+    })
+  }
+  
+
+
   return (
     <>
       <NewExpense SaveAppExpenseData ={saveDataExpenseDataHandler} />
     {/* <h2>Let's Start Expense...!</h2> */}
-    <Expenses item ={expense} />
+    <Expenses item ={expenses} />
 
 
     </>
